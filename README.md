@@ -1,0 +1,2 @@
+# SinsShadowAutoRun
+Endless runner
