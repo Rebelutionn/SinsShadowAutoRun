@@ -5,17 +5,19 @@
 //Enforce MaxHP Cap
 if (objPlayerGrapple.iCurrentHP >= objPlayerGrapple.iMaxHP)
 {
-	objPlayerGrapple.iCurrentHP = objPlayerGrapple.iMaxHp;
+	objPlayerGrapple.iCurrentHP = objPlayerGrapple.iMaxHP;
 }
 
 
 //Enforce Stamina Cap
-if (objPlayerGrapple.iCurrentStamina >= objPlayerGrapple.iMaxStamina)
+if (objPlayerGrapple.iCurrentStamina > objPlayerGrapple.iMaxStamina)
 {
 	objPlayerGrapple.iCurrentStamina = objPlayerGrapple.iMaxStamina;
-}else{
+}
+else
+{
 	objPlayerGrapple.iCurrentStamina = objPlayerGrapple.iCurrentStamina + 0.05;    //Every frame will add 1 stamina back to Amelia
-	}
+}
 	
 
 

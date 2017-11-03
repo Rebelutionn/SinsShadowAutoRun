@@ -127,14 +127,6 @@
             }
         },
         {
-            "Key": "55396c9e-9de8-4755-a3dc-6582ffa61047",
-            "Value": {
-                "id": "52873870-aaee-4357-9a5a-fc7876ffc8be",
-                "resourcePath": "sprites\\spr_HealthBorder\\spr_HealthBorder.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "58d22d3e-5baf-4b45-81df-e62fe89e15a0",
             "Value": {
                 "id": "cc6cc02f-539e-4f79-b1df-5cc41a249cd9",
@@ -431,18 +423,10 @@
             }
         },
         {
-            "Key": "faca32c9-b753-4f3d-b6c6-0893e02367e0",
-            "Value": {
-                "id": "26bb3ed5-bb1f-4a43-9872-3c0f823215b6",
-                "resourcePath": "objects\\objBat2\\objBat2.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "fbb45c5c-0674-4c8a-9133-24120d89aa4c",
             "Value": {
                 "id": "3ab91254-0295-445e-8b0b-af2877db4632",
-                "resourcePath": "sprites\\spr_HealthFiller\\spr_HealthFiller.yy",
+                "resourcePath": "sprites\\spr_HealthBar\\spr_HealthBar.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -451,14 +435,6 @@
             "Value": {
                 "id": "3ce084e5-0838-429c-8554-2dad8f164290",
                 "resourcePath": "objects\\objGrappleBlock\\objGrappleBlock.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "fe8a1bfc-67d3-479d-8bb1-bb2bade5e7b9",
-            "Value": {
-                "id": "8564b63f-f595-46b7-8d48-d234bd863765",
-                "resourcePath": "objects\\objBat1\\objBat1.yy",
                 "resourceType": "GMObject"
             }
         }

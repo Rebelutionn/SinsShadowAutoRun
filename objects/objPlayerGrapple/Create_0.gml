@@ -13,13 +13,20 @@ alarm[0] = iAttackTimer;
 iPrevFrameX = 0;
 
 // HP
-iCurrentHP = 50;
+iCurrentHP = 100;
 iMaxHP = 100;
+
+//Stamina
+iCurrentStamina = 100;
+iMaxStamina = 100;
 
 // TAKE DAMAGE
 bCanTakeDamage = 0;
 iDamageBuffer = 60;
 alarm[0] = iDamageBuffer;
 bGotHit = 0;
+
+
+
 
 
