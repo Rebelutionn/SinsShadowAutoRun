@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "55396c9e-9de8-4755-a3dc-6582ffa61047",
+            "Value": {
+                "id": "dbe2f0ee-e63a-4999-925f-cf81d2488156",
+                "resourcePath": "sprites\\spr_HealthBorder\\spr_HealthBorder.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "58d22d3e-5baf-4b45-81df-e62fe89e15a0",
             "Value": {
                 "id": "cc6cc02f-539e-4f79-b1df-5cc41a249cd9",
@@ -131,6 +139,14 @@
             "Value": {
                 "id": "d70fdc57-935f-49d1-a39e-2ce81d6237f6",
                 "resourcePath": "sprites\\sprBreakBlock\\sprBreakBlock.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "74522715-f55f-4393-8429-5d4348caf08d",
+            "Value": {
+                "id": "e1822f48-e8c0-4cdc-bf48-f356a5e1ce3b",
+                "resourcePath": "sprites\\spr_StaminaBar\\spr_StaminaBar.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -215,6 +231,14 @@
             }
         },
         {
+            "Key": "b8c5da01-f238-43f4-b538-a32e5c079cd9",
+            "Value": {
+                "id": "0a14f9ca-75ba-4d94-9ddd-3276d68b1f36",
+                "resourcePath": "sprites\\spr_GUI\\spr_GUI.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "bebaa64b-f80c-4a16-ac3e-705f68084b1b",
             "Value": {
                 "id": "06c50805-ae0e-4ba6-84bc-a26faf81b95f",
@@ -287,6 +311,14 @@
             }
         },
         {
+            "Key": "e13ae2cd-26e2-4c58-8440-4bb8bc302d64",
+            "Value": {
+                "id": "717bfbe3-2d3c-4358-8999-9b89185a28b0",
+                "resourcePath": "objects\\objHUD\\objHUD.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e679f870-9df5-4d94-af07-a918d75f67ad",
             "Value": {
                 "id": "25cf5b42-2ebb-45f4-8a01-b330ccd3975b",
@@ -340,6 +372,14 @@
                 "id": "26bb3ed5-bb1f-4a43-9872-3c0f823215b6",
                 "resourcePath": "objects\\objBat2\\objBat2.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "fbb45c5c-0674-4c8a-9133-24120d89aa4c",
+            "Value": {
+                "id": "0fa70d76-23bf-4d37-a994-d166f62ae0bc",
+                "resourcePath": "sprites\\spr_HealthFiller\\spr_HealthFiller.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
