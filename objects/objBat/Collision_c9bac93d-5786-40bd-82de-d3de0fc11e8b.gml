@@ -6,14 +6,13 @@ if other.visible
 {
 	move_bounce_all(false);
 }
+*/
 
-
-if objAmeliaV2.bCanTakeDamage == 1
+if (objAmeliaV2.bCanTakeDamage == 1 && bCanAttack == true)
 	{
 	objAmeliaV2.iCurrentHP -= iBatDamage;
 	objAmeliaV2.bCanTakeDamage = 0;
-	objAmeliaV2 .bGotHit = 1;
+	objAmeliaV2.bGotHit = 1;
 }
-	
-*/
 
+bCanAttack = false;

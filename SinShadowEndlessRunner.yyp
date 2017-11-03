@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "a6f621e8-3837-45b7-860b-0a82e0be4d0a",
+            "Value": {
+                "id": "d61a914d-d120-4d53-bc74-3a0315a281f1",
+                "resourcePath": "objects\\objBat\\objBat.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
                 "id": "bb4c19f7-681a-4f9d-bb62-04e9cdd90405",
@@ -263,14 +271,6 @@
             }
         },
         {
-            "Key": "d4eb5434-a632-4577-9bcb-6cc4920a9ac3",
-            "Value": {
-                "id": "b5d28e5d-692b-4a7f-ab28-146b5aeba2a7",
-                "resourcePath": "objects\\objBat\\objBat.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "dc04eca2-2177-447e-a0c5-6474b35e29da",
             "Value": {
                 "id": "9291fc7d-2469-4ef9-8ab5-4b7a54aef33f",
@@ -335,26 +335,10 @@
             }
         },
         {
-            "Key": "faca32c9-b753-4f3d-b6c6-0893e02367e0",
-            "Value": {
-                "id": "26bb3ed5-bb1f-4a43-9872-3c0f823215b6",
-                "resourcePath": "objects\\objBat2\\objBat2.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "fd056b22-90ae-4bcd-8cdf-2548e587420c",
             "Value": {
                 "id": "3ce084e5-0838-429c-8554-2dad8f164290",
                 "resourcePath": "objects\\objGrappleBlock\\objGrappleBlock.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "fe8a1bfc-67d3-479d-8bb1-bb2bade5e7b9",
-            "Value": {
-                "id": "8564b63f-f595-46b7-8d48-d234bd863765",
-                "resourcePath": "objects\\objBat1\\objBat1.yy",
                 "resourceType": "GMObject"
             }
         }
