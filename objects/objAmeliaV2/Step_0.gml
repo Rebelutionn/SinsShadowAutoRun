@@ -90,6 +90,48 @@ if(mouse_check_button(mb_left)) {
 	} 
 }
 
+//CHECKING HOOK       
+if mouse_check_button_pressed(mb_right) && (instance_exists(objGrappleBlock))
+{
+	instNearestGP = instance_nearest(x, y, objGrappleBlock);
+
+	if instNearestGP.y < y
+	{
+		mx = instNearestGP.x;
+		my = instNearestGP.y;
+		active = true;
+		vspeed += -5.7;
+		if(distance_to_object(objGrappleBlock) > iGrappleRadius)
+		{ 
+			active = false;   
+		}
+	}                                   
+}
+ 
+if(active == true)
+{
+	gravity = 0.1;
+	x += (mx - x) = 0.5;
+	y += (my - y) = 0.5;
+}    
+
+if mouse_check_button_released(mb_right)
+{
+active = false;
+} 
+
+//FACE DIRECTION OF MOVEMENT
+if (x < iPrevFrameX)
+	{
+		image_xscale = -1;
+	}
+else if (x > iPrevFrameX)
+	{
+		image_xscale = 1;
+	}
+iPrevFrameX = x;
+
+
 /*if(mouse_check_button(mb_left)){
 	sprite_index = sprSwordAtk;
 	image_speed = 1;
@@ -108,29 +150,6 @@ if(mouse_check_button(mb_left)) {
 	}
 }*/
 
-
-//Grapple Check
-if(mouse_check_button_pressed(mb_right)){
-	instance_create_layer(x,y,"Player",objGrapple);
-	mx = mouse_x;
-	my = mouse_y; 
-	if(place_meeting(mx,my,objGrappleBlock)){
-		active = true;
-	}
-}
- 
-if(active){ 
-	grv = 0.3; 
-	x += (mx - x) = 1;
-	y += (my - y) = 1;
-	vsp = 0;
-	hsp = hsp + 5;
-}
-
-if(mouse_check_button_released(mb_right)){
-	active = false;
-	grv = 0.3;
-}
 
 //Window Size
 /*

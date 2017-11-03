@@ -1,27 +1,44 @@
-/// @description Insert description here
-// You can write your code in this editor
+
+// GRAVITY PHYSICS 
 if (place_free(x,y+1)) gravity = 1;
 else gravity = 0;
 
-
-
-if(keyboard_check(ord("D"))){
-hspeed = 3;
-sprite_index = sprAmeliaV2; 
+// PLAYER MOVEMENT 
+if(keyboard_check(ord("D")))
+{
+	physics_apply_force(x, y, 500, 0);
+	hspeed = 3;
+	sprite_index = sprAmeliaV2; 
 }
-if(keyboard_check(ord("A"))){
-hspeed = -3;
-sprite_index = sprAmeliaV2;
+
+if(keyboard_check(ord("A")))
+{
+	physics_apply_force(x, y, -500, 0);
+	hspeed = -3;
+	sprite_index = sprAmeliaV2;
 }
+
 if(!keyboard_check(ord("A"))) && !keyboard_check(ord("D")) hspeed = 0;
 
-if(keyboard_check(vk_space) && !place_free(x,y+1)){
-vspeed += -15;
-sprite_index = sprAmeliaV2;
+
+if(keyboard_check(vk_space))
+{
+	physics_apply_impulse(x, y, 0, -1000)
+	vspeed += -15;
+	sprite_index = sprAmeliaV2;
 }
 
-//CHECKING HOOK       
-if(keyboard_check_pressed(vk_rshift)) && (instance_exists(objGrappleBlock))
+/*
+if(keyboard_check(vk_space) && !place_free(x,y+1))
+{
+	physics_apply_impulse(x, y, 0, -1000)
+	vspeed += -15;
+	sprite_index = sprAmeliaV2;
+}
+*/
+
+// GRAPPLE FUNCTIONALITY        
+if(keyboard_check_pressed(vk_up)) && (instance_exists(objGrappleBlock))
 {
 	instNearestGP = instance_nearest(x, y, objGrappleBlock);
 
@@ -39,22 +56,34 @@ if(keyboard_check_pressed(vk_rshift)) && (instance_exists(objGrappleBlock))
 }
 
  
-if(active == true){
+if(active == true)
+{
 	gravity = 0.1;
 	x += (mx - x) = 0.5;
 	y += (my - y) = 0.5;
 }    
 
-if(keyboard_check_released(vk_rshift)){
+if(keyboard_check_released(vk_up))
+{
 active = false;
 } 
 
-
+// FACE DIRECTION OF MOVEMENT 
+if (x < iPrevFrameX)
+	{
+		image_xscale = -1;
+	}
+else if (x > iPrevFrameX)
+	{
+		image_xscale = 1;
+	}
+iPrevFrameX = x;
 
 //Attack isn't working, and hitbox isn't aligned with the Sword; 
 //We'll have to change that functionality anyways, since we're taking the sword
 //off of Amelia's sprite
 
+/*
 //Attack
 if(attack == true){
 	if(mouse_check_button(mb_left)) {
@@ -79,15 +108,4 @@ if(iAttackTimer > 1){
 	attack = true; 
 }
 
-
-
-if (x < iPrevFrameX)
-	{
-		image_xscale = -1;
-	}
-else if (x > iPrevFrameX)
-	{
-		image_xscale = 1;
-	}
-iPrevFrameX = x;
-
+*/
