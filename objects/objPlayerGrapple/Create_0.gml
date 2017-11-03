@@ -1,27 +1,25 @@
-/// @description Insert description here
-// You can write your code in this editor
+// GRAPPLE VARIABLES 
 mx = x; // hook x coordinates
 my = y; // hook y coordinates
 active = false;
-iGrappleRadius = 280;
+iGrappleRadius = 200;
+instNearestGP = objGrappleBlock;
 
-//Attack Variables
+// ATTACK VARIABLES
 attack = false;
 iAttackTimer = 2;
 alarm[0] = iAttackTimer;
 
 iPrevFrameX = 0;
 
-instNearestGP = objGrappleBlock;
-
-//HP
+// HP
 iCurrentHP = 50;
 iMaxHP = 100;
 
-//Take Damage
+// TAKE DAMAGE
 bCanTakeDamage = 0;
 iDamageBuffer = 60;
 alarm[0] = iDamageBuffer;
-
 bGotHit = 0;
+
 

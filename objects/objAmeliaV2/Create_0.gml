@@ -3,18 +3,17 @@ hsp = 0;
 vsp = 0;
 grv = 0.3;
 walksp = 2;
-
 controller = 0; 
-
 deltax = 0;
-
-
 key_down = 0;
+iPrevFrameX = 0;
 
-//Grapple Operation  
-mx = x; //grapple x coordinates 
-my = y; //grapple y coordinates 
+//Grapple Variables
+mx = x; // hook x coordinates
+my = y; // hook y coordinates
 active = false;
+iGrappleRadius = 280;
+instNearestGP = objGrappleBlock;
 
 //HP statistics 
 bCanTakeDamage = 0;
