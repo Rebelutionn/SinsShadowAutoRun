@@ -2,7 +2,7 @@
     "id": "5b84f79a-64e7-43ea-a481-c9b3738dc6d0",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "sprPlayerGrapple",
+    "name": "sprTestSprite",
     "For3D": false,
     "HTile": false,
     "VTile": false,
