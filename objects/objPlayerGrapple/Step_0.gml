@@ -23,7 +23,7 @@ if(!keyboard_check(ord("A"))) && !keyboard_check(ord("D")) hspeed = 0;
 
 if(keyboard_check(vk_space))
 {
-	physics_apply_impulse(x, y, 0, -1000)
+	physics_apply_impulse(x, y, 0, -100)
 	vspeed += -15;
 	sprite_index = sprAmeliaV2;
 }
