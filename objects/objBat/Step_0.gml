@@ -1,23 +1,39 @@
 
-
-if instance_exists(objPlayerGrapple)
+//Bat AI pathing
+if instance_exists(objAmeliaV2)
 	{
-	if distance_to_object(objPlayerGrapple) < iBatDetectionRadius
+	if (distance_to_object(objAmeliaV2) < iBatDetectionRadius && bCanAttack == true)
 		{
-		bContinuePathOnce = 0;
+		bContinuePath = 0;
 		path_end();
-		move_towards_point(objPlayerGrapple.x+12, objPlayerGrapple.y-2, 1.5);
+		move_towards_point(objAmeliaV2.x, objAmeliaV2.y, 2);
 		}
-	else if bContinuePathOnce == 0
+	else if bContinuePath == 0
 		{
-		bContinuePathOnce = 1;
+		bContinuePath = 1;
 		path_start(pathEnemyBat, iBatSpeed, path_action_continue, 0);
 		}
-	}  
+	}
 
-if(batHP <=0){					   
+//Timer countdown
+if bCanAttack == false
+	{
+	tAttackRefresh -= 1;
+	}
+	
+show_debug_message(tAttackRefresh);
+if tAttackRefresh <= 0
+	{
+	bCanAttack = true;
+	tAttackRefresh = 180;
+	}
+
+
+//Bat taking damage and dying
+if(batHP <=0)
+	{					   
 	instance_destroy();  
-} 
+	} 
 
 hit = instance_place (x, y, objSwordHitbox);
 
@@ -27,3 +43,13 @@ if (hit != noone)
 	instance_destroy ();
 	}
 	
+//This makese the Bat flip when it switches it's position.	
+if (x < iPrevFrameX)
+	{
+	image_xscale = 1;
+	}
+else if (x > iPrevFrameX)
+	{
+	image_xscale = -1;
+	}
+iPrevFrameX = x;
