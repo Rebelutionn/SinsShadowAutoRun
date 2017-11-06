@@ -22,4 +22,9 @@ iDamageBuffer = 60;
 alarm[0] = iDamageBuffer;
 bGotHit = 0;
 
+// JUMPING PHYSICS VARIABLES 
+bUnspaced = true; //is the spacebar being held down
+bOnGround = false; //is Amelia on the ground
+bJumpImpulseSwitch = true; //"true" meaning "can jump"
+
 

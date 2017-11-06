@@ -1,43 +1,57 @@
 
-// GRAVITY PHYSICS 
-if (place_free(x,y+1)) gravity = 1;
-else gravity = 0;
+/// GRAVITY PHYSICS 
+//if (place_free(x,y+1)) gravity = 1;
+//else gravity = 0;
 
-// PLAYER MOVEMENT 
+/// PLAYER MOVEMENT 
 if(keyboard_check(ord("D")))
 {
-	physics_apply_force(x, y, 500, 0);
+	image_xscale = 1;
+	physics_apply_force(x, y, 600, 0);
 	hspeed = 3;
 	sprite_index = sprAmeliaV2; 
 }
 
 if(keyboard_check(ord("A")))
 {
-	physics_apply_force(x, y, -500, 0);
+	image_xscale = -1;
+	physics_apply_force(x, y, -600, 0);
 	hspeed = -3;
 	sprite_index = sprAmeliaV2;
 }
 
 if(!keyboard_check(ord("A"))) && !keyboard_check(ord("D")) hspeed = 0;
 
-
-if(keyboard_check(vk_space))
+/// JUMP CONDITIONS AND FUNCTIONALITY 
+if(keyboard_check_released(vk_space))
 {
-	physics_apply_impulse(x, y, 0, -100)
-	vspeed += -15;
-	sprite_index = sprAmeliaV2;
+	bUnspaced = true;
 }
 
-/*
-if(keyboard_check(vk_space) && !place_free(x,y+1))
+if(place_meeting(x,y+5,objCollisionPhys))
 {
-	physics_apply_impulse(x, y, 0, -1000)
-	vspeed += -15;
-	sprite_index = sprAmeliaV2;
+	bOnGround = true;
+} 
+else
+{
+	bOnGround = false;
 }
-*/
 
-// GRAPPLE FUNCTIONALITY        
+if(keyboard_check(vk_space)) && bUnspaced == true && bOnGround == true
+{
+	bUnspaced = false;
+	physics_apply_impulse(x, y, 0, -750);
+	//vspeed += -15;
+	//sprite_index = sprAmeliaV2;
+}
+
+/// DEBUG MESSAGES
+//show_debug_message("bJumpImpulseSwitch: " + string(bJumpImpulseSwitch));
+//show_debug_message("bOnGround: " + string(bOnGround));
+//show_debug_message("bUnspaced: " + string(bUnspaced));
+
+
+/// GRAPPLE FUNCTIONALITY        
 if(keyboard_check_pressed(vk_up)) && (instance_exists(objGrappleBlock))
 {
 	instNearestGP = instance_nearest(x, y, objGrappleBlock);
@@ -65,10 +79,11 @@ if(active == true)
 
 if(keyboard_check_released(vk_up))
 {
-active = false;
+	active = false;
 } 
 
-// FACE DIRECTION OF MOVEMENT 
+/*
+/// FACE DIRECTION OF MOVEMENT    
 if (x < iPrevFrameX)
 	{
 		image_xscale = -1;
@@ -78,13 +93,14 @@ else if (x > iPrevFrameX)
 		image_xscale = 1;
 	}
 iPrevFrameX = x;
+*/
 
 //Attack isn't working, and hitbox isn't aligned with the Sword; 
 //We'll have to change that functionality anyways, since we're taking the sword
 //off of Amelia's sprite
 
 /*
-//Attack
+/// ATTACK 
 if(attack == true){
 	if(mouse_check_button(mb_left)) {
 		sprite_index = sprSwordAtk; 
