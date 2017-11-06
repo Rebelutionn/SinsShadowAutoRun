@@ -1,12 +1,13 @@
-
 //Bat AI pathing
-if instance_exists(objAmeliaV2)
+if instance_exists(objPlayerGrapple)
 	{
-	if (distance_to_object(objAmeliaV2) < iBatDetectionRadius && bCanAttack == true)
+	if (distance_to_object(objPlayerGrapple) < iBatDetectionRadius && bCanAttack == true)
 		{
 		bContinuePath = 0;
 		path_end();
-		move_towards_point(objAmeliaV2.x, objAmeliaV2.y, 2);
+		dirToPlayer = point_direction(x,y,objPlayerGrapple.x, objPlayerGrapple.y);
+		x += lengthdir_x(2,dirToPlayer);
+		y += lengthdir_y(2,dirToPlayer);
 		}
 	else if bContinuePath == 0
 		{
@@ -17,7 +18,7 @@ if instance_exists(objAmeliaV2)
 
 //Timer countdown
 if bCanAttack == false
-	{
+	{                     
 	tAttackRefresh -= 1;
 	}
 	
