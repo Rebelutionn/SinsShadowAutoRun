@@ -5,6 +5,14 @@ active = false;
 iGrappleRadius = 200;
 instNearestGP = objGrappleBlock;
 
+// PHYSICS VARIABLES
+fixtureAmelia = physics_fixture_create();
+jointGrapple = pointer_null;
+physics_fixture_set_circle_shape(fixtureAmelia, 5);
+
+phy_rotation = 0;
+phy_fixed_rotation = true;
+
 // ATTACK VARIABLES
 attack = false;
 iAttackTimer = 2;
@@ -30,8 +38,3 @@ bGotHit = 0;
 bUnspaced = true; //is the spacebar being held down
 bOnGround = false; //is Amelia on the ground
 bJumpImpulseSwitch = true; //"true" meaning "can jump"
-
-
-
-
-

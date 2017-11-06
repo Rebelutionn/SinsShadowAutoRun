@@ -1,7 +1,10 @@
 
-/// GRAVITY PHYSICS 
-//if (place_free(x,y+1)) gravity = 1;
-//else gravity = 0;
+/// Grapple functionality
+if(keyboard_check_pressed(vk_up))
+{
+	jointGrapple = physics_joint_rope_create(objPlayerGrapple, objGrappleBlock, (objPlayerGrapple.x + 9), (objPlayerGrapple.y - 41), objGrappleBlock.x, objGrappleBlock.y, 256, false);
+}
+if(keyboard_check_released(vk_up)) physics_joint_delete(jointGrapple);
 
 /// PLAYER MOVEMENT 
 if(keyboard_check(ord("D")))
