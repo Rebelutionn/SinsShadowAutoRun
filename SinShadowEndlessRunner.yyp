@@ -359,14 +359,6 @@
             }
         },
         {
-            "Key": "ccf7fffd-e473-43b7-b4fb-ba96a2eb82ba",
-            "Value": {
-                "id": "76f26fc7-396b-4cad-bda9-e65f74297188",
-                "resourcePath": "rooms\\HealthBarTest\\HealthBarTest.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "cd08faf0-986e-45df-a38f-85a6bae2c18a",
             "Value": {
                 "id": "f01b6bcd-66b8-4749-b638-ec7672f336ab",
