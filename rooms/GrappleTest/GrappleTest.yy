@@ -402,7 +402,6 @@
         "21ddf327-6a68-460d-a6c6-5965e1dd4d88",
         "8d018e59-dc7f-4a0e-9856-d10e9d17e7e6",
         "5ee6c044-c23c-4df2-a272-21cabd9ac231",
-        "9422a7f8-0694-419d-882c-7fe6dd5daa02",
         "be93e8d6-a80e-48ec-9669-b23c1b2c9b0c",
         "35e7dfff-ae2f-4d26-9866-24fba522f360",
         "acaeada1-2935-4153-b1a0-7ace919fbe50",
@@ -9952,8 +9951,8 @@
                     "m_originalParentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "name": "inst_76BE3F6C",
-                    "x": 384,
-                    "y": 416,
+                    "x": 544,
+                    "y": 288,
                     "IsDnD": false,
                     "colour": {
                         "Value": 4294967295
@@ -9962,30 +9961,6 @@
                     "creationCodeType": "",
                     "inheritCode": false,
                     "name_with_no_file_rename": "inst_76BE3F6C",
-                    "objId": "fd056b22-90ae-4bcd-8cdf-2548e587420c",
-                    "rotation": 0,
-                    "scaleX": 1,
-                    "scaleY": 1
-                },
-                {
-                    "id": "9422a7f8-0694-419d-882c-7fe6dd5daa02",
-                    "modelName": "GMRInstance",
-                    "mvc": "1.0",
-                    "ignore": false,
-                    "inheritItemSettings": false,
-                    "m_originalParentID": "00000000-0000-0000-0000-000000000000",
-                    "m_serialiseFrozen": false,
-                    "name": "inst_626D8745",
-                    "x": 672,
-                    "y": 416,
-                    "IsDnD": false,
-                    "colour": {
-                        "Value": 4294967295
-                    },
-                    "creationCodeFile": "",
-                    "creationCodeType": "",
-                    "inheritCode": false,
-                    "name_with_no_file_rename": "inst_626D8745",
                     "objId": "fd056b22-90ae-4bcd-8cdf-2548e587420c",
                     "rotation": 0,
                     "scaleX": 1,
@@ -10048,8 +10023,8 @@
                     "m_originalParentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "name": "inst_47277231",
-                    "x": 160,
-                    "y": 640,
+                    "x": 192,
+                    "y": 576,
                     "IsDnD": false,
                     "colour": {
                         "Value": 4294967295

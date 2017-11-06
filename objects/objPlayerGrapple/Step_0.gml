@@ -1,13 +1,16 @@
 
-/// GRAVITY PHYSICS 
-//if (place_free(x,y+1)) gravity = 1;
-//else gravity = 0;
+/// Grapple functionality
+if(keyboard_check_pressed(vk_up))
+{
+	jointGrapple = physics_joint_rope_create(objPlayerGrapple, objGrappleBlock, (objPlayerGrapple.x + 9), (objPlayerGrapple.y - 41), objGrappleBlock.x, objGrappleBlock.y, 256, false);
+}
+if(keyboard_check_released(vk_up)) physics_joint_delete(jointGrapple);
 
 /// PLAYER MOVEMENT 
 if(keyboard_check(ord("D")))
 {
 	image_xscale = 1;
-	physics_apply_force(x, y, 600, 0);
+	physics_apply_force(x, y, 500, 0);
 	hspeed = 3;
 	sprite_index = sprAmeliaV2; 
 }
@@ -15,7 +18,7 @@ if(keyboard_check(ord("D")))
 if(keyboard_check(ord("A")))
 {
 	image_xscale = -1;
-	physics_apply_force(x, y, -600, 0);
+	physics_apply_force(x, y, -500, 0);
 	hspeed = -3;
 	sprite_index = sprAmeliaV2;
 }
@@ -40,7 +43,7 @@ else
 if(keyboard_check(vk_space)) && bUnspaced == true && bOnGround == true
 {
 	bUnspaced = false;
-	physics_apply_impulse(x, y, 0, -750);
+	physics_apply_impulse(x, y, 0, -460);
 	//vspeed += -15;
 	//sprite_index = sprAmeliaV2;
 }
@@ -120,6 +123,9 @@ if(attack == true){
 	}
 }
 
+*/
+
+/*
 if(iAttackTimer > 1){
 	attack = true; 
 }
