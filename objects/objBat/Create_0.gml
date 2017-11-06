@@ -16,4 +16,4 @@ dirToPlayer = 0;
 
 iPrevFrameX = 0;
 
-path_start(pathEnemyBat, iBatSpeed, path_action_restart, 0);
+//path_start(pathEnemyBat, iBatSpeed, path_action_restart, 0);
