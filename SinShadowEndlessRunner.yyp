@@ -223,14 +223,6 @@
             }
         },
         {
-            "Key": "8c3013eb-0a99-4e96-bb4c-6414d0e6196f",
-            "Value": {
-                "id": "7067ca4b-fedb-4013-ae8e-bf61725f8c37",
-                "resourcePath": "sprites\\spr_HealthBar\\spr_HealthBar.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "9a09fd31-e3e7-4b8f-b4e8-6cd80558730c",
             "Value": {
                 "id": "5deaf6a1-62c8-4e06-9c2e-937b4978ba0f",
@@ -257,7 +249,7 @@
         {
             "Key": "a6f621e8-3837-45b7-860b-0a82e0be4d0a",
             "Value": {
-                "id": "4a45164c-99aa-4a70-a5f0-d2f0b1e4e417",
+                "id": "801cf28e-d873-4aff-b7ed-daa1be7224f1",
                 "resourcePath": "objects\\objBat\\objBat.yy",
                 "resourceType": "GMObject"
             }
@@ -311,27 +303,11 @@
             }
         },
         {
-            "Key": "c9123034-e67d-4638-ba4e-792e75a93837",
-            "Value": {
-                "id": "8e97dfcb-5e8b-4e91-a6ca-004c3321737d",
-                "resourcePath": "objects\\objBat1\\objBat1.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "6b53d774-6fa4-447d-a767-41e7f611befc",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
-            }
-        },
-        {
-            "Key": "ccf7fffd-e473-43b7-b4fb-ba96a2eb82ba",
-            "Value": {
-                "id": "0b162e93-6d62-49a4-9f96-a3ba5eccc2c6",
-                "resourcePath": "rooms\\HealthBarTest\\HealthBarTest.yy",
-                "resourceType": "GMRoom"
             }
         },
         {
@@ -401,7 +377,7 @@
         {
             "Key": "e13ae2cd-26e2-4c58-8440-4bb8bc302d64",
             "Value": {
-                "id": "3a123096-730b-4386-a430-521474476caa",
+                "id": "01412b10-a23a-48db-b3f8-8ea73c634eb9",
                 "resourcePath": "objects\\objHUD\\objHUD.yy",
                 "resourceType": "GMObject"
             }
