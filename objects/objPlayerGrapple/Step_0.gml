@@ -7,7 +7,7 @@
 if(keyboard_check(ord("D")))
 {
 	image_xscale = 1;
-	physics_apply_force(x, y, 600, 0);
+	physics_apply_force(x, y, 500, 0);
 	hspeed = 3;
 	sprite_index = sprAmeliaV2; 
 }
@@ -15,7 +15,7 @@ if(keyboard_check(ord("D")))
 if(keyboard_check(ord("A")))
 {
 	image_xscale = -1;
-	physics_apply_force(x, y, -600, 0);
+	physics_apply_force(x, y, -500, 0);
 	hspeed = -3;
 	sprite_index = sprAmeliaV2;
 }
@@ -40,7 +40,7 @@ else
 if(keyboard_check(vk_space)) && bUnspaced == true && bOnGround == true
 {
 	bUnspaced = false;
-	physics_apply_impulse(x, y, 0, -750);
+	physics_apply_impulse(x, y, 0, -460);
 	//vspeed += -15;
 	//sprite_index = sprAmeliaV2;
 }
@@ -120,6 +120,9 @@ if(attack == true){
 	}
 }
 
+*/
+
+/*
 if(iAttackTimer > 1){
 	attack = true; 
 }

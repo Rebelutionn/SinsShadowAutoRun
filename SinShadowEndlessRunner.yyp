@@ -127,14 +127,6 @@
             }
         },
         {
-            "Key": "52e3f319-851e-47b1-ac28-218565ca69e5",
-            "Value": {
-                "id": "1423ff9f-dc0f-4040-a3df-f74b2527fd6a",
-                "resourcePath": "objects\\objAutoAmelia\\objAutoAmelia.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "55396c9e-9de8-4755-a3dc-6582ffa61047",
             "Value": {
                 "id": "52873870-aaee-4357-9a5a-fc7876ffc8be",
@@ -243,6 +235,14 @@
             "Value": {
                 "id": "2f0e85a7-5d55-4dae-8c33-20826919b511",
                 "resourcePath": "objects\\objPlayerGrapple\\objPlayerGrapple.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "a6f621e8-3837-45b7-860b-0a82e0be4d0a",
+            "Value": {
+                "id": "b075bb1a-5d8c-44d0-b555-3d1ab28d21e5",
+                "resourcePath": "objects\\objBat\\objBat.yy",
                 "resourceType": "GMObject"
             }
         },
