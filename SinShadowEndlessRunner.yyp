@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "279ecb90-c01b-4180-aeec-db0a56894c4d",
+            "Value": {
+                "id": "23f04bea-f479-4921-bb5b-71a86e7f2214",
+                "resourcePath": "sprites\\sprJump\\sprJump.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2fb57dfd-9b41-4da7-b934-7b4286b4ead1",
             "Value": {
                 "id": "8ffdfd67-4472-4d02-acbb-2f1980e7dedd",
@@ -132,6 +140,14 @@
                 "id": "1423ff9f-dc0f-4040-a3df-f74b2527fd6a",
                 "resourcePath": "objects\\objAutoAmelia\\objAutoAmelia.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "53ba073d-caa0-4dae-a878-e445b75b872f",
+            "Value": {
+                "id": "a18d14b1-d482-4d81-87b4-f8234300dcbe",
+                "resourcePath": "sprites\\sprSlide\\sprSlide.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -247,6 +263,14 @@
             }
         },
         {
+            "Key": "a6f621e8-3837-45b7-860b-0a82e0be4d0a",
+            "Value": {
+                "id": "8d256800-710a-44ce-81c4-b569494ca6dd",
+                "resourcePath": "objects\\objBat\\objBat.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
                 "id": "bb4c19f7-681a-4f9d-bb62-04e9cdd90405",
@@ -283,6 +307,14 @@
             "Value": {
                 "id": "fa31085a-f149-4294-a14e-636acd2c8fd0",
                 "resourcePath": "sprites\\spr_GUI\\spr_GUI.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "bd9cd707-d3a4-402f-8fab-c219b6b17369",
+            "Value": {
+                "id": "637c5049-d654-4b90-a421-a5a6fd46487f",
+                "resourcePath": "sprites\\sprIdle\\sprIdle.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -348,6 +380,14 @@
                 "id": "9291fc7d-2469-4ef9-8ab5-4b7a54aef33f",
                 "resourcePath": "objects\\objAmeliaV2\\objAmeliaV2.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "dd334c83-47fd-4714-b07d-f249077acd76",
+            "Value": {
+                "id": "98e19085-02cc-45ff-a5e2-e135c3eeab49",
+                "resourcePath": "sprites\\sprWalk\\sprWalk.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
