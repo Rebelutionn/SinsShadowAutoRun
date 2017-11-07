@@ -6,7 +6,7 @@
 randomize();
 
 
-//Initialize Player Stats
+/// Initialize Player Stats
 
 //HP
 //objPlayerGrapple.iCurrentHP = 100; 

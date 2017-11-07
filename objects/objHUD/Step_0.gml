@@ -16,7 +16,7 @@ if (objPlayerGrapple.iCurrentStamina > objPlayerGrapple.iMaxStamina)
 }
 else
 {
-	objPlayerGrapple.iCurrentStamina = objPlayerGrapple.iCurrentStamina + 0.05;    //Every frame will add 1 stamina back to Amelia
+	objPlayerGrapple.iCurrentStamina = objPlayerGrapple.iCurrentStamina + 0.1;    //Every frame will add 1 stamina back to Amelia
 }
 
 /*
