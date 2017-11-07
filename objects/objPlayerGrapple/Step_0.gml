@@ -40,6 +40,7 @@ if(keyboard_check_released(vk_space))
 {
 	bUnspaced = true;
 	iCurrentStamina -= 15;
+	sprite_index = sprFall;
 }
 
 if(place_meeting(x,y+5,objCollisionPhys))
@@ -100,6 +101,28 @@ if(keyboard_check_released(vk_up))
 //physics collision events
 phys_x = phy_position_x
 phys_y = phy_position_y
+
+//if Amelia Dies
+if (iCurrentHP <= 0)
+{
+	instance_destroy(objPlayerGrapple);
+	game_restart();
+}
+
+//Bat attack cooldown
+/*
+if alarm_get(0) <= 0
+	{
+	bCanTakeDamage = 1;
+	}
+	
+if bGotHit = 1
+{
+	bGotHit = 0;
+	alarm_set(0, iDamageBuffer);
+}
+*/
+
 
 /*
 /// FACE DIRECTION OF MOVEMENT    
