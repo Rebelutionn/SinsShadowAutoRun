@@ -25,7 +25,7 @@ iCurrentHP = 100;
 iMaxHP = 100;
 
 //Stamina
-iCurrentStamina = 100;
+iCurrentStamina = 50;
 iMaxStamina = 100;
 
 // TAKE DAMAGE
@@ -38,3 +38,7 @@ bGotHit = 0;
 bUnspaced = true; //is the spacebar being held down
 bOnGround = false; //is Amelia on the ground
 bJumpImpulseSwitch = true; //"true" meaning "can jump"
+
+//physics collision
+phys_x = phy_position_x
+phys_y = phy_position_y

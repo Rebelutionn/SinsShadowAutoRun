@@ -1,4 +1,5 @@
- 
+
+show_debug_message(iCurrentHP)
 /// Grapple functionality
 if(keyboard_check_pressed(vk_up))
 {
@@ -85,6 +86,10 @@ if(keyboard_check_released(vk_up))
 {
 	active = false;
 }
+
+//physics collision events
+phys_x = phy_position_x
+phys_y = phy_position_y
 
 /*
 /// FACE DIRECTION OF MOVEMENT    

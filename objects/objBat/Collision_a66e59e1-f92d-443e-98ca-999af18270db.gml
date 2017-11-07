@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+//damage logic
 if (objPlayerGrapple.bCanTakeDamage == 1 && bCanAttack == true)
 	{
 	objPlayerGrapple.iCurrentHP -= iBatDamage;
@@ -7,3 +6,6 @@ if (objPlayerGrapple.bCanTakeDamage == 1 && bCanAttack == true)
 	objPlayerGrapple.bGotHit = 1;
 }
 bCanAttack = false; 
+
+//Debug
+objPlayerGrapple.iCurrentHP -= iBatDamage;
