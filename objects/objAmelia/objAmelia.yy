@@ -1,117 +1,117 @@
 {
-    "id": "a45f27a9-6f57-4673-9e86-aea24dbb2493",
+    "id": "10e2e774-ad23-4b17-b6f1-a22955b85bf6",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "objPlayerGrapple",
+    "name": "objAmelia",
     "eventList": [
         {
-            "id": "21b9dbef-7f09-4641-9375-474b94bd181a",
+            "id": "fff34d0b-731c-4e09-ae9e-a096c5ac9bca",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "a45f27a9-6f57-4673-9e86-aea24dbb2493"
+            "m_owner": "10e2e774-ad23-4b17-b6f1-a22955b85bf6"
         },
         {
-            "id": "bac5c666-fc84-4c75-aae8-7cfdfe867ade",
+            "id": "bb450f05-47f7-4576-ba87-85d248172d31",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
-            "m_owner": "a45f27a9-6f57-4673-9e86-aea24dbb2493"
+            "m_owner": "10e2e774-ad23-4b17-b6f1-a22955b85bf6"
         },
         {
-            "id": "d1c3c060-c42a-4bdd-9c20-2c0e47023cf3",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "d187f72f-532c-4d9f-9fcf-a22a5fd36c7f",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "a45f27a9-6f57-4673-9e86-aea24dbb2493"
-        },
-        {
-            "id": "8d9272db-be05-41b8-84d7-d99d2377fa8e",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "369eb61a-e2bb-4f15-9134-f9e42ffd12e5",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "a45f27a9-6f57-4673-9e86-aea24dbb2493"
-        },
-        {
-            "id": "e321d919-c919-41be-84d8-dd3976a0ec9e",
+            "id": "dddd613d-7d45-4ef3-b81c-ef2f3946fab9",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 2,
-            "m_owner": "a45f27a9-6f57-4673-9e86-aea24dbb2493"
+            "m_owner": "10e2e774-ad23-4b17-b6f1-a22955b85bf6"
         },
         {
-            "id": "aeb342db-e7ce-4cce-847d-ad0f057ab59d",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "cd08faf0-986e-45df-a38f-85a6bae2c18a",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "a45f27a9-6f57-4673-9e86-aea24dbb2493"
-        },
-        {
-            "id": "424d08bc-252d-4fd3-9a60-1b700a6d0854",
+            "id": "3ee6a41f-6c94-45f8-b20d-1dbf22eab277",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 8,
-            "m_owner": "a45f27a9-6f57-4673-9e86-aea24dbb2493"
+            "m_owner": "10e2e774-ad23-4b17-b6f1-a22955b85bf6"
         },
         {
-            "id": "418d30c4-024b-4132-926d-3ae94d4ef908",
+            "id": "f1e24c06-e00a-44c3-9a68-b2a9255bd185",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
-            "collisionObjectId": "a6f621e8-3837-45b7-860b-0a82e0be4d0a",
+            "collisionObjectId": "d187f72f-532c-4d9f-9fcf-a22a5fd36c7f",
             "enumb": 0,
             "eventtype": 4,
-            "m_owner": "a45f27a9-6f57-4673-9e86-aea24dbb2493"
+            "m_owner": "10e2e774-ad23-4b17-b6f1-a22955b85bf6"
+        },
+        {
+            "id": "90e0e404-eac7-4c0b-b220-29dbee3fe232",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "cd08faf0-986e-45df-a38f-85a6bae2c18a",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "10e2e774-ad23-4b17-b6f1-a22955b85bf6"
+        },
+        {
+            "id": "2f82a1fe-566c-4a32-a21b-a4c353d69a2f",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "369eb61a-e2bb-4f15-9134-f9e42ffd12e5",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "10e2e774-ad23-4b17-b6f1-a22955b85bf6"
+        },
+        {
+            "id": "79564cb3-dc33-4a1c-bf9e-53a1c0ac9b2c",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "e49b3581-0a00-4118-9a35-b507c978e4b2",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "10e2e774-ad23-4b17-b6f1-a22955b85bf6"
         }
     ],
-    "maskSpriteId": "d52fb764-a0bb-4120-92ef-c341421dce6b",
+    "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
-    "physicsAngularDamping": 1000,
-    "physicsDensity": 1,
-    "physicsFriction": 0.25,
+    "physicsAngularDamping": 0.1,
+    "physicsDensity": 0.5,
+    "physicsFriction": 0.2,
     "physicsGroup": 0,
     "physicsKinematic": false,
-    "physicsLinearDamping": 1,
+    "physicsLinearDamping": 0.1,
     "physicsObject": true,
-    "physicsRestitution": 0,
+    "physicsRestitution": 0.1,
     "physicsSensor": false,
     "physicsShape": 0,
     "physicsShapePoints": [
         {
-            "id": "772aeabc-c49e-4bdd-90f1-a45f236f4ba6",
+            "id": "c9e9c456-9739-4a0f-8db5-68f32c644485",
             "modelName": "GMPoint",
             "mvc": "1.0",
-            "x": 16,
-            "y": 28
+            "x": 14,
+            "y": 26
         },
         {
-            "id": "30482caf-fea9-4780-9066-1ce87f764db8",
+            "id": "99264fe7-351b-40f0-a0cb-49d9428265c1",
             "modelName": "GMPoint",
             "mvc": "1.0",
-            "x": 22,
-            "y": 28
+            "x": 23,
+            "y": 26
         }
     ],
     "physicsStartAwake": true,

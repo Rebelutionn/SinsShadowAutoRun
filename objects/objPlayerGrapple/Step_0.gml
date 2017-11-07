@@ -1,4 +1,4 @@
-
+ 
 /// Grapple functionality
 if(keyboard_check_pressed(vk_up))
 {
@@ -12,7 +12,7 @@ if(keyboard_check(ord("D")))
 	image_xscale = 1;
 	physics_apply_force(x, y, 500, 0);
 	hspeed = 3;
-	sprite_index = sprAmeliaV2; 
+	sprite_index = sprWalk; 
 }
 
 if(keyboard_check(ord("A")))
@@ -20,7 +20,7 @@ if(keyboard_check(ord("A")))
 	image_xscale = -1;
 	physics_apply_force(x, y, -500, 0);
 	hspeed = -3;
-	sprite_index = sprAmeliaV2;
+	sprite_index = sprWalk;
 }
 
 if(!keyboard_check(ord("A"))) && !keyboard_check(ord("D")) hspeed = 0;
@@ -45,7 +45,8 @@ if(keyboard_check(vk_space)) && bUnspaced == true && bOnGround == true
 	bUnspaced = false;
 	physics_apply_impulse(x, y, 0, -460);
 	//vspeed += -15;
-	//sprite_index = sprAmeliaV2;
+	sprite_index = sprJump;
+	//image_index = 
 }
 
 /// DEBUG MESSAGES
@@ -83,7 +84,7 @@ if(active == true)
 if(keyboard_check_released(vk_up))
 {
 	active = false;
-} 
+}
 
 /*
 /// FACE DIRECTION OF MOVEMENT    
