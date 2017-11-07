@@ -25,7 +25,7 @@ iCurrentHP = 100;
 iMaxHP = 100;
 
 //Stamina
-iCurrentStamina = 50;
+iCurrentStamina = 100;
 iMaxStamina = 100;
 
 // TAKE DAMAGE

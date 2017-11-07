@@ -13,7 +13,8 @@ if(keyboard_check(ord("D")))
 	image_xscale = 1;
 	physics_apply_force(x, y, 500, 0);
 	hspeed = 3;
-	sprite_index = sprWalk; 
+	sprite_index= sprWalk; 
+	
 }
 
 if(keyboard_check(ord("A")))
@@ -30,6 +31,7 @@ if(!keyboard_check(ord("A"))) && !keyboard_check(ord("D")) hspeed = 0;
 if(keyboard_check_released(vk_space))
 {
 	bUnspaced = true;
+	iCurrentStamina -= 15;
 }
 
 if(place_meeting(x,y+5,objCollisionPhys))
