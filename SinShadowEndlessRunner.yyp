@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "25d55d4b-8311-49b7-a85c-017495c329b3",
+            "Value": {
+                "id": "2b3a5e31-79ff-493a-bc0c-e523af9304e9",
+                "resourcePath": "sounds\\slashAttack\\slashAttack.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "2fb57dfd-9b41-4da7-b934-7b4286b4ead1",
             "Value": {
                 "id": "8ffdfd67-4472-4d02-acbb-2f1980e7dedd",
