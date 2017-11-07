@@ -28,3 +28,15 @@ if (objPlayerGrapple.iCurrentHP <= 0)
 	instance_destroy();
 	game_restart();
 }
+
+	
+if alarm_get(0) <= 0
+	{
+	objPlayerGrapple.bCanTakeDamage = 1;
+	}
+	
+if objPlayerGrapple.bGotHit = 1
+{
+	objPlayerGrapple.bGotHit = 0;
+	alarm_set(0, objPlayerGrapple.iDamageBuffer);
+}

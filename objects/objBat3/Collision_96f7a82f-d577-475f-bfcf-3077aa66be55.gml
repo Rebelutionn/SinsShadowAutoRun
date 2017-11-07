@@ -6,4 +6,5 @@ if (objPlayerGrapple.bCanTakeDamage == 1 && bCanAttack == true)
 	objPlayerGrapple.bCanTakeDamage = 0;
 	objPlayerGrapple.bGotHit = 1;
 }
-bCanAttack = false; 
+
+bCanAttack = false;
