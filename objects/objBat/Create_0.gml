@@ -7,9 +7,9 @@ batHP = 4;
 
 bBatDebugMode = 1;
 bContinuePath = 1;
-iBatDetectionRadius = 100;
+iBatDetectionRadius = 150;
 iBatSpeed = 2.25;
-iBatDamage = 5;
+iBatDamage = 0.5;
 bCanAttack = true;
 tAttackRefresh = 180;
 dirToPlayer = 0;

@@ -1,9 +1,17 @@
 
 show_debug_message(iCurrentHP)
 /// Grapple functionality
-if(keyboard_check_pressed(vk_up))
+if(keyboard_check_pressed(vk_up)) && (instance_exists(objGrappleBlock))
 {
-	jointGrapple = physics_joint_rope_create(objPlayerGrapple, objGrappleBlock, (objPlayerGrapple.x + 9), (objPlayerGrapple.y - 41), objGrappleBlock.x, objGrappleBlock.y, 256, false);
+	instNearestGP = instance_nearest(x, y, objGrappleBlock);
+	if instNearestGP.y < y
+	{
+		jointGrapple = physics_joint_rope_create(objPlayerGrapple, objGrappleBlock, (objPlayerGrapple.x + 9), (objPlayerGrapple.y - 41), objGrappleBlock.x, objGrappleBlock.y, 125, false);
+		if(distance_to_object(objGrappleBlock) > iGrappleRadius)
+		{ 
+			active = false;   
+		}
+	}
 }
 if(keyboard_check_released(vk_up)) physics_joint_delete(jointGrapple);
 
@@ -13,7 +21,8 @@ if(keyboard_check(ord("D")))
 	image_xscale = 1;
 	physics_apply_force(x, y, 500, 0);
 	hspeed = 3;
-	sprite_index = sprWalk; 
+	sprite_index= sprWalk; 
+	
 }
 
 if(keyboard_check(ord("A")))
@@ -30,6 +39,8 @@ if(!keyboard_check(ord("A"))) && !keyboard_check(ord("D")) hspeed = 0;
 if(keyboard_check_released(vk_space))
 {
 	bUnspaced = true;
+	iCurrentStamina -= 15;
+	sprite_index = sprFall;
 }
 
 if(place_meeting(x,y+5,objCollisionPhys))
@@ -90,6 +101,28 @@ if(keyboard_check_released(vk_up))
 //physics collision events
 phys_x = phy_position_x
 phys_y = phy_position_y
+
+//if Amelia Dies
+if (iCurrentHP <= 0)
+{
+	instance_destroy(objPlayerGrapple);
+	game_restart();
+}
+
+//Bat attack cooldown
+/*
+if alarm_get(0) <= 0
+	{
+	bCanTakeDamage = 1;
+	}
+	
+if bGotHit = 1
+{
+	bGotHit = 0;
+	alarm_set(0, iDamageBuffer);
+}
+*/
+
 
 /*
 /// FACE DIRECTION OF MOVEMENT    

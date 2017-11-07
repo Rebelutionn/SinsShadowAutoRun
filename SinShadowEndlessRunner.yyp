@@ -319,11 +319,27 @@
             }
         },
         {
+            "Key": "86ba473d-1c30-448e-8904-f0b04fdaa670",
+            "Value": {
+                "id": "93f4c8a4-0725-43e8-bda5-309f1c0b5e1c",
+                "resourcePath": "tilesets\\tsStageElements\\tsStageElements.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "8e1aea5d-fc87-4c80-bf00-2e11026f1670",
             "Value": {
                 "id": "6d793c79-1594-48ce-a44f-f7b7e3a9f526",
                 "resourcePath": "paths\\pathEnemyBat2\\pathEnemyBat2.yy",
                 "resourceType": "GMPath"
+            }
+        },
+        {
+            "Key": "915f8954-ee7f-411c-9f89-19029c28408b",
+            "Value": {
+                "id": "58c99f0f-dccf-458b-a15e-5ebea5da1eb5",
+                "resourcePath": "sprites\\sprClouds\\sprClouds.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -484,6 +500,22 @@
                 "id": "b5d28e5d-692b-4a7f-ab28-146b5aeba2a7",
                 "resourcePath": "objects\\objBat\\objBat.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "d52fb764-a0bb-4120-92ef-c341421dce6b",
+            "Value": {
+                "id": "d6fc6bd1-18d7-4a3a-b44d-7834e6dacdab",
+                "resourcePath": "sprites\\sprIdle\\sprIdle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "da96d3e0-816e-48f1-b130-bc920e056ba4",
+            "Value": {
+                "id": "8e41bf77-ed90-4c99-bdfd-21273e406a95",
+                "resourcePath": "sprites\\sprStageElements\\sprStageElements.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
