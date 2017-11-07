@@ -1,9 +1,17 @@
 
 show_debug_message(iCurrentHP)
 /// Grapple functionality
-if(keyboard_check_pressed(vk_up))
+if(keyboard_check_pressed(vk_up)) && (instance_exists(objGrappleBlock))
 {
-	jointGrapple = physics_joint_rope_create(objPlayerGrapple, objGrappleBlock, (objPlayerGrapple.x + 9), (objPlayerGrapple.y - 41), objGrappleBlock.x, objGrappleBlock.y, 256, false);
+	instNearestGP = instance_nearest(x, y, objGrappleBlock);
+	if instNearestGP.y < y
+	{
+		jointGrapple = physics_joint_rope_create(objPlayerGrapple, objGrappleBlock, (objPlayerGrapple.x + 9), (objPlayerGrapple.y - 41), objGrappleBlock.x, objGrappleBlock.y, 125, false);
+		if(distance_to_object(objGrappleBlock) > iGrappleRadius)
+		{ 
+			active = false;   
+		}
+	}
 }
 if(keyboard_check_released(vk_up)) physics_joint_delete(jointGrapple);
 
