@@ -12,7 +12,7 @@ iBatSpeed = 2.25;
 iBatDamage = 5;
 bCanAttack = true;
 tAttackRefresh = 180;
- 
+dirToPlayer = 0;
 
 iPrevFrameX = 0;
 
