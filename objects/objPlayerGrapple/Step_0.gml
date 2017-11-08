@@ -16,10 +16,11 @@ if(keyboard_check_pressed(vk_up)) && (instance_exists(objGrappleBlock))
 if(keyboard_check_released(vk_up)) physics_joint_delete(jointGrapple);
 
 /// PLAYER MOVEMENT 
+if(hspeed == 0) sprite_index = sprIdle;
 if(keyboard_check(ord("D")))
 {
 	image_xscale = 1;
-	physics_apply_force(x, y, 500, 0);
+	physics_apply_force(x, y, 510, 0);
 	hspeed = 3;
 	sprite_index= sprWalk; 
 	
@@ -28,7 +29,7 @@ if(keyboard_check(ord("D")))
 if(keyboard_check(ord("A")))
 {
 	image_xscale = -1;
-	physics_apply_force(x, y, -500, 0);
+	physics_apply_force(x, y, -510, 0);
 	hspeed = -3;
 	sprite_index = sprWalk;
 }
@@ -57,7 +58,7 @@ if(keyboard_check(vk_space)) && bUnspaced == true && bOnGround == true
 	bUnspaced = false;
 	physics_apply_impulse(x, y, 0, -460);
 	//vspeed += -15;
-	sprite_index = sprJump;
+	//sprite_index = sprJump;
 	//image_index = 
 }
 

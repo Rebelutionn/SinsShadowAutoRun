@@ -1749,8 +1749,8 @@
                     "m_originalParentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "name": "inst_498DBBFA",
-                    "x": 864,
-                    "y": 480,
+                    "x": 128,
+                    "y": 512,
                     "IsDnD": false,
                     "colour": {
                         "Value": 4294967295
@@ -4797,22 +4797,22 @@
             ],
             "m_parentID": "00000000-0000-0000-0000-000000000000",
             "m_serialiseFrozen": false,
-            "name": "Background",
-            "userdefined_depth": false,
+            "name": "Clouds",
+            "userdefined_depth": true,
             "visible": true,
-            "animationFPS": 15,
+            "animationFPS": 60,
             "animationSpeedType": 0,
             "colour": {
-                "Value": 4278190080
+                "Value": 4294967295
             },
-            "hspeed": 0,
-            "htiled": false,
-            "spriteId": "00000000-0000-0000-0000-000000000000",
-            "stretch": false,
+            "hspeed": 0.2,
+            "htiled": true,
+            "spriteId": "915f8954-ee7f-411c-9f89-19029c28408b",
+            "stretch": true,
             "userdefined_animFPS": false,
             "vspeed": 0,
-            "vtiled": false,
-            "x": 0,
+            "vtiled": true,
+            "x": -500,
             "y": 0
         }
     ],
@@ -4842,7 +4842,7 @@
         "mvc": "1.0",
         "clearDisplayBuffer": true,
         "clearViewBackground": false,
-        "enableViews": false,
+        "enableViews": true,
         "inheritViewSettings": false
     },
     "views": [
@@ -4850,21 +4850,21 @@
             "id": "da857c63-8eb8-4668-8eef-6a7aecc07741",
             "modelName": "GMRView",
             "mvc": "1.0",
-            "hborder": 32,
+            "hborder": 320,
             "hport": 768,
-            "hspeed": -1,
-            "hview": 768,
+            "hspeed": -200,
+            "hview": 450,
             "inherit": false,
-            "objId": "00000000-0000-0000-0000-000000000000",
+            "objId": "a45f27a9-6f57-4673-9e86-aea24dbb2493",
             "vborder": 32,
-            "visible": false,
+            "visible": true,
             "vspeed": -1,
             "wport": 1024,
-            "wview": 1024,
+            "wview": 500,
             "xport": 0,
             "xview": 0,
             "yport": 0,
-            "yview": 0
+            "yview": 150
         },
         {
             "id": "204a58d7-623a-4632-a6be-db18a9dbb702",
