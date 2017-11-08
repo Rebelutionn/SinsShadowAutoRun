@@ -142,7 +142,7 @@ iPrevFrameX = x;
 //We'll have to change that functionality anyways, since we're taking the sword
 //off of Amelia's sprite
 
-/*
+
 /// ATTACK 
 if(attack == true){
 	if(mouse_check_button(mb_left)) {
@@ -161,9 +161,11 @@ if(attack == true){
 	}else {
 		sprite_index = objPlayerGrapple;
 	}
+	audio_play_sound(slashAttack, 5, false);
+
 }
 
-*/
+
 
 /*
 if(iAttackTimer > 1){
