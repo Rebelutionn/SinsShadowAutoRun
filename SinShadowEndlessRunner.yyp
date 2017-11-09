@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "320fe06b-08d8-4b50-9a18-9b6faf793373",
+            "Value": {
+                "id": "89e3a2f7-9fa3-43de-bc60-50215d64ef73",
+                "resourcePath": "sprites\\sprAmeliaSwing\\sprAmeliaSwing.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "369eb61a-e2bb-4f15-9134-f9e42ffd12e5",
             "Value": {
                 "id": "6ac74e62-dfa7-44ce-b5b5-2157d3d42564",
