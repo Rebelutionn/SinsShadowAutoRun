@@ -1,19 +1,22 @@
-// This makes the Bat move is the path where ever you choose to drop the Object.
+//variables 
 hit = 0;
 hspeed = 0;
 vspeed = 0; 
 
 batHP = 4; 
 
+// Bat's Pathing && Speed
 bBatDebugMode = 1;
 bContinuePath = 1;
 iBatDetectionRadius = 150;
 iBatSpeed = 2.25;
-iBatDamage = 0.5;
+
+// Bat's Damage Variables and Timer
+iBatDamage = 1;
 bCanAttack = true;
 tAttackRefresh = 180;
+
+// Bat's Direction...?
 dirToPlayer = 0;
-
 iPrevFrameX = 0;
-
 path_start(pathEnemyBat, iBatSpeed, path_action_restart, 0);

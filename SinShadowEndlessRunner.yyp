@@ -90,7 +90,7 @@
             "Key": "10e2e774-ad23-4b17-b6f1-a22955b85bf6",
             "Value": {
                 "id": "83c0ad1c-63c0-497b-ab24-d970c7669f5f",
-                "resourcePath": "objects\\objAmelia\\objAmelia.yy",
+                "resourcePath": "objects\\objAmeliaIGNORE\\objAmeliaIGNORE.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -271,6 +271,14 @@
             }
         },
         {
+            "Key": "721e3205-bf77-4e61-a55d-070c95a9a805",
+            "Value": {
+                "id": "dd8dee2a-c296-4961-9e55-12400e54d7b4",
+                "resourcePath": "sprites\\sprRedSky\\sprRedSky.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "72ec2695-8676-4497-87db-0c3371672f88",
             "Value": {
                 "id": "24de82e2-a7f5-4a65-8c42-c2573ec2954e",
@@ -412,6 +420,14 @@
                 "id": "801cf28e-d873-4aff-b7ed-daa1be7224f1",
                 "resourcePath": "objects\\objBat\\objBat.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "a8f10c57-6f74-421a-bf37-3d5c49fd737d",
+            "Value": {
+                "id": "180e722a-2bbd-48a9-bed2-d5acfe0d4b8a",
+                "resourcePath": "tilesets\\tsRedSky\\tsRedSky.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {

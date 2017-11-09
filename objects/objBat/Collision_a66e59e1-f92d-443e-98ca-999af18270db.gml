@@ -1,4 +1,4 @@
-//damage logic
+// Damage Logic 
 if (objPlayerGrapple.bCanTakeDamage == 1 && bCanAttack == true)
 	{
 	objPlayerGrapple.iCurrentHP -= iBatDamage;
@@ -7,5 +7,5 @@ if (objPlayerGrapple.bCanTakeDamage == 1 && bCanAttack == true)
 }
 bCanAttack = false; 
 
-//Debug
+// Debug
 objPlayerGrapple.iCurrentHP -= iBatDamage;
