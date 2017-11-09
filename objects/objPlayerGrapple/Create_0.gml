@@ -13,10 +13,12 @@ physics_fixture_set_circle_shape(fixtureAmelia, 5);
 phy_rotation = 0;
 phy_fixed_rotation = true;
 
+/* /// These Didn't Work ///
 // ATTACK VARIABLES
 attack = false;
 iAttackTimer = 2;
 alarm[0] = iAttackTimer;
+*/
 
 iPrevFrameX = 0;
 
@@ -29,7 +31,7 @@ iCurrentStamina = 100;
 iMaxStamina = 100;
 
 // TAKE DAMAGE
-bCanTakeDamage = 0;
+bCanTakeDamage = true ;
 iDamageBuffer = 60;
 alarm[0] = iDamageBuffer;
 bGotHit = 0;

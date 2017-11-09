@@ -1,6 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
-
-//DIE MOTHERFUCKER
+/// COLLISION WITH HITBOX
 
 instance_destroy();

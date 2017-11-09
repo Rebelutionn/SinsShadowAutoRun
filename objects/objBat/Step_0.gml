@@ -19,21 +19,21 @@ if instance_exists(objPlayerGrapple)
 //Timer countdown
 if bCanAttack == false
 	{                     
-	tAttackRefresh -= 1;
+		tAttackRefresh -= 1;
 	}
 	
 //Attack refresh
 if tAttackRefresh <= 0
 	{
-	bCanAttack = true;
-	tAttackRefresh = 180;
+		bCanAttack = true;
+		tAttackRefresh = 180;
 	}
 
 
 //Bat taking damage and dying
 if(batHP <=0)
 	{					   
-	instance_destroy();  
+		instance_destroy();  
 	} 
 
 hit = instance_place (x, y, objSwordHitbox);
@@ -55,7 +55,7 @@ else if (x > iPrevFrameX)
 	}
 iPrevFrameX = x;
 
-//physics collision
+// physics collision
 if collision_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, objPlayerGrapple, false, true) != noone
 {
     //damage logic

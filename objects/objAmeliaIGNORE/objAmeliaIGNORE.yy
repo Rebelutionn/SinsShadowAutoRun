@@ -2,7 +2,7 @@
     "id": "10e2e774-ad23-4b17-b6f1-a22955b85bf6",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "objAmelia",
+    "name": "objAmeliaIGNORE",
     "eventList": [
         {
             "id": "fff34d0b-731c-4e09-ae9e-a096c5ac9bca",
