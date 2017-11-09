@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "037c9548-013a-437f-ac6e-08b766781f86",
+            "Value": {
+                "id": "9aa45ae6-5ff1-4a2b-bfe0-3717e4780f18",
+                "resourcePath": "objects\\objBear\\objBear.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "057d9e7e-493a-4bd9-a0a7-71da6e8689a7",
             "Value": {
                 "id": "bde7308b-b4f5-4352-b040-06f7f4adcdb2",
@@ -106,7 +114,7 @@
             "Key": "25d55d4b-8311-49b7-a85c-017495c329b3",
             "Value": {
                 "id": "2b3a5e31-79ff-493a-bc0c-e523af9304e9",
-                "resourcePath": "sounds\\slashAttack\\slashAttack.yy",
+                "resourcePath": "sounds\\sndSlashAttack\\sndSlashAttack.yy",
                 "resourceType": "GMSound"
             }
         },
@@ -359,6 +367,14 @@
             }
         },
         {
+            "Key": "a15fac20-5e7d-4d62-8ae3-1afc3a3630e8",
+            "Value": {
+                "id": "1df43226-3496-4bd9-9068-077356c52764",
+                "resourcePath": "sprites\\sprSwordAtk\\sprSwordAtk.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a1c2e56d-0510-4442-9adb-33833f8d0d64",
             "Value": {
                 "id": "69432f23-874e-41eb-8913-aa8f037c8683",
@@ -436,6 +452,14 @@
                 "id": "06c50805-ae0e-4ba6-84bc-a26faf81b95f",
                 "resourcePath": "views\\bebaa64b-f80c-4a16-ac3e-705f68084b1b.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c6737a45-0a72-40ec-86d7-cc6747d88c60",
+            "Value": {
+                "id": "3c9b0b1f-25ff-4ced-a388-7ab1888bb11e",
+                "resourcePath": "sounds\\sndBatNoise\\sndBatNoise.yy",
+                "resourceType": "GMSound"
             }
         },
         {

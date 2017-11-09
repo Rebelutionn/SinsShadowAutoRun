@@ -144,25 +144,28 @@ iPrevFrameX = x;
 
 
 /// ATTACK 
-if(attack == true){
-	if(mouse_check_button(mb_left)) {
+if(attack == true)
+{
+	if(mouse_check_button(mb_left)) 
+	{
 		sprite_index = sprSwordAtk; 
 		image_index = -1;
 		var xdiff = x - xprevious;
 	
-		if(!(xdiff = 0)){
+	if(!(xdiff = 0))
+		{
 			deltax = xdiff; 
 		}
-		instance_create_layer(x+ sign(other.x),y+sign(other.y)*32,"Player",objSwordHitbox);
-		if(image_index >= 7) && (mouse_check_button_released(mb_left)){
+		
+		
+	instance_create_layer(x+ sign(other.x),y+sign(other.y)*32,"Player",objSwordHitbox);
+	if(image_index >= 7) && (mouse_check_button_released(mb_left))
+		{
 			image_speed = 0;
 			sprite_index = objPlayerGrapple;
 		} 
-	}else {
-		sprite_index = objPlayerGrapple;
 	}
-	audio_play_sound(slashAttack, 5, false);
-
+	audio_play_sound(sndSlashAttack, 5, false);
 }
 
 
