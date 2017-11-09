@@ -16,6 +16,9 @@ if instance_exists(objPlayerGrapple)
 		}
 	}
 
+//Bat sound
+audio_play_sound(sndBatNoise, 10, false);
+
 //Timer countdown
 if bCanAttack == false
 	{                     
