@@ -1,21 +1,29 @@
-
-show_debug_message(iCurrentHP)
-/// Grapple functionality
-if(keyboard_check_pressed(vk_up)) && (instance_exists(objGrappleBlock))
+///// Grapple functionality /////
+if(keyboard_check_pressed(vk_up)) && (instance_exists(objGrappleBlock)) && (distance_to_object(objGrappleBlock) < iGrappleRadius)
 {
+	active = true;
 	instNearestGP = instance_nearest(x, y, objGrappleBlock);
+	bJumping = false;
 	if instNearestGP.y < y
 	{
+		mx = instNearestGP.x;
+		my = instNearestGP.y;
 		jointGrapple = physics_joint_rope_create(objPlayerGrapple, objGrappleBlock, (objPlayerGrapple.x + 9), (objPlayerGrapple.y - 41), objGrappleBlock.x, objGrappleBlock.y, 125, false);
 		if(distance_to_object(objGrappleBlock) > iGrappleRadius)
 		{ 
-			active = false;   
+			active = false;
 		}
 	}
 }
-if(keyboard_check_released(vk_up)) physics_joint_delete(jointGrapple);
 
-/// PLAYER MOVEMENT 
+if(keyboard_check_released(vk_up)) && (active == true)
+{
+	physics_joint_delete(jointGrapple);
+	active = false;
+	
+}
+
+/// PLAYER MOVEMENT /////
 if(hspeed == 0) sprite_index = sprIdle;
 if(keyboard_check(ord("D")))
 {
@@ -23,6 +31,10 @@ if(keyboard_check(ord("D")))
 	physics_apply_force(x, y, 510, 0);
 	hspeed = 3;
 	sprite_index= sprWalk; 
+	if(active == true)
+	{
+		sprite_index = sprAmeliaSwing;
+	}
 	
 }
 
@@ -32,72 +44,66 @@ if(keyboard_check(ord("A")))
 	physics_apply_force(x, y, -510, 0);
 	hspeed = -3;
 	sprite_index = sprWalk;
+	if(active == true)
+	{
+		sprite_index = sprAmeliaSwing;
+	}
 }
+
+if(active == true) && (hspeed == 0)
+{
+	sprite_index = sprAmeliaSwing; 
+}	
 
 if(!keyboard_check(ord("A"))) && !keyboard_check(ord("D")) hspeed = 0;
 
-/// JUMP CONDITIONS AND FUNCTIONALITY 
+/////// JUMP CONDITIONS AND FUNCTIONALITY //////
+
+//Used to see if the space key has been released since last successful jump
 if(keyboard_check_released(vk_space))
 {
 	bUnspaced = true;
-	iCurrentStamina -= 15;
-	sprite_index = sprFall;
 }
 
+//Check to see if player is on the ground
 if(place_meeting(x,y+5,objCollisionPhys))
 {
 	bOnGround = true;
+	bJumping = false;
 } 
 else
 {
 	bOnGround = false;
 }
 
-if(keyboard_check(vk_space)) && bUnspaced == true && bOnGround == true
+//Jump only under appropriate conditions
+if(keyboard_check(vk_space)) && bUnspaced == true && bOnGround == true && iCurrentStamina > 14
 {
 	bUnspaced = false;
 	physics_apply_impulse(x, y, 0, -460);
+	iCurrentStamina -= 15;
+	bJumping = true;
+	///Jump functionality (pre-physics)///
 	//vspeed += -15;
 	//sprite_index = sprJump;
 	//image_index = 
 }
 
-/// DEBUG MESSAGES
-//show_debug_message("bJumpImpulseSwitch: " + string(bJumpImpulseSwitch));
-//show_debug_message("bOnGround: " + string(bOnGround));
-//show_debug_message("bUnspaced: " + string(bUnspaced));
-
-
-/// GRAPPLE FUNCTIONALITY        
-if(keyboard_check_pressed(vk_up)) && (instance_exists(objGrappleBlock))
+//display correct sprite while jumping
+if bJumping == true
 {
-	instNearestGP = instance_nearest(x, y, objGrappleBlock);
-
-	if instNearestGP.y < y
-	{
-		mx = instNearestGP.x;
-		my = instNearestGP.y;
-		active = true;
-		vspeed += -5.7;
-		if(distance_to_object(objGrappleBlock) > iGrappleRadius)
-		{ 
-			active = false;   
-		}
-	}                                   
+	if phy_linear_velocity_y <= 0
+		sprite_index = sprJump;
+	if phy_linear_velocity_y > 0
+		sprite_index = sprFall;
 }
 
- 
-if(active == true)
+//display correct sprite while falling
+if active == false && phy_linear_velocity_y > 0 && bOnGround == false
 {
-	gravity = 0.1;
-	x += (mx - x) = 0.5;
-	y += (my - y) = 0.5;
-}    
-
-if(keyboard_check_released(vk_up))
-{
-	active = false;
+	sprite_index = sprFall;
 }
+//show_debug_message(bJumping);
 
 //physics collision events
 phys_x = phy_position_x
@@ -173,3 +179,9 @@ if(iAttackTimer > 1){
 }
 
 */
+
+///// DEBUG MESSAGES /////
+//show_debug_message("bJumpImpulseSwitch: " + string(bJumpImpulseSwitch));
+//show_debug_message("bOnGround: " + string(bOnGround));
+//show_debug_message("bUnspaced: " + string(bUnspaced));
+//show_debug_message(iCurrentHP);
